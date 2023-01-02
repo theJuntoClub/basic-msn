@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  font-family: monospace;
+}
+
+.body {
+  background-image: url("../assets/wallpaper.webp");
+  background-size: cover;
+}
+
+.box {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: absolute;
+  left: 495px;
+  top: 50px;
+  height: 40vh;
+  width: 30vw;
+  /* our scroll */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: #0ee 11px groove;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #000, #333, #445, #666, #999);
+  color: #0ff;
+}
+
+.box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #003;
+}
+
+.second-box {
+  display: grid;
+  grid-template-columns: 25vw 4.2vw;
+  margin-top: auto;
+}
+
+.msg {
+  outline-width: 0;
+  border: none;
+  background-color: #001;
+  color: #0ff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.msg::placeholder {
+  padding: 5px;
+  background-color: #001;
+  color: #0ee;
+}
+
+.new-msg {
+  list-style-type: none;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+.btn {
+  padding: 5px;
+  border: #0ee 2px groove;
+  cursor: pointer;
+  color: #0ee;
+  border-radius: 5px;
+  background-color: #001;
+}
